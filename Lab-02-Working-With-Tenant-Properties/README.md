@@ -172,7 +172,7 @@ I also learned the importance of configuration verification. After configuring t
 | Screenshot | Evidence |
 |---|---|
 | `01-custom-subdomain.png` | Custom tenant subdomain configuration |
-| `02-tenant-properties-updated.png` | Tenant name, technical contact, location, and tenant properties |
+| `02-tenant-properties-updated.png` | Tenant name, location, tenant ID verification, and tenant properties |
 | `03-configure-tenant-privacy-information.png` | Global Privacy Contact and Privacy Statement configuration |
 | `04-verify-organizational-privacy-statement.png` | End-user verification of organizational privacy notice |
 
