@@ -140,7 +140,6 @@ After processing completed, Entra ID automatically populated the group with matc
 
 ![Dynamic group automatically populated with matching users](images/09-Dynamic-Group-Members-REDACTED.png)
 ---
-
 ## Part 4 – Dynamic Rule for Guest Users
 
 I modified the membership rule to identify Guest accounts.
@@ -209,8 +208,6 @@ This provided final validation that Microsoft Entra ID can dynamically maintain 
 
 ---
 
----
-
 ## Key Skills Demonstrated
 
 - Microsoft Entra ID administration
@@ -237,7 +234,7 @@ This supports IAM concepts including:
 
 - Automated provisioning
 - Identity lifecycle management
-- Role and attribute-based administration
+- Attribute-based identity administration
 - Least-privilege access management
 - Standardized entitlement assignment
 
@@ -265,6 +262,7 @@ The following activities were successfully configured and validated during this 
 7. Guest user dynamic rule validation
 8. Guest dynamic group membership
 9. Member-user rule validation
+10. Final Member dynamic group processing and membership update
 
 ---
 
