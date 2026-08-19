@@ -54,6 +54,18 @@ The group was configured to support centralized access and license management.
 
 A test user, **Omar Bennett**, was added to the group.
 
+
+### Evidence – Security Group Creation
+
+![Security Group Configuration](images/02-Security-Group-Configuration-REDACTED.png)
+
+The security group `sg-SC300-O365` was successfully created in Microsoft Entra ID.
+
+### Evidence – Group Membership
+
+![User Added to Security Group](images/03-Omar-Group-Membership-REDACTED.png)
+
+The test user was successfully added as a member of the security group.
 ---
 
 ## Part 2 – Configure Group-Based Licensing
@@ -75,6 +87,29 @@ The Entra ID license page showed:
 - Assignment Path: **Inherited (sg-SC300-O365)**
 
 This demonstrates centralized license administration using group-based licensing.
+### Evidence – Before Group Licensing
+
+![User Before Group Licensing](images/01-Omar-No-License-REDACTED.png)
+
+Before group-based licensing was configured, the test user had no license assigned.
+
+### Evidence – Group-Based License Assignment
+
+![Group License Assignment](images/04-Group-License-Assignment-REDACTED.png)
+
+Microsoft 365 Business Premium licensing was assigned to the `sg-SC300-O365` security group through the Microsoft 365 Admin Center.
+
+### Evidence – License Inheritance Validation
+
+![Inherited Group License](images/05-Omar-Inherited-License-REDACTED.png)
+
+After the group license assignment was processed, the test user received Microsoft 365 Business Premium through the `sg-SC300-O365` group, validating group-based license inheritance.
+
+### Evidence - Licensed Group Verification
+
+![Northwest Sales group verification](images/06-Northwest-Sales-Group-REDACTED.png)
+
+The Northwest Sales group was reviewed to verify the group configuration used during the licensing exercise.
 
 ---
 
@@ -93,7 +128,17 @@ Example:
 `user.objectId -ne null`
 
 After processing completed, Entra ID automatically populated the group with matching users.
+### Evidence – Dynamic Membership Rule
 
+![Dynamic membership rule configuration](images/07-Dynamic-Membership-Rule-REDACTED.png)
+
+### Evidence – Dynamic Group Processing
+
+![Dynamic group processing succeeded](images/08-Dynamic-Group-Processing-Succeeded-REDACTED.png)
+
+### Evidence – Dynamic Group Membership
+
+![Dynamic group automatically populated with matching users](images/09-Dynamic-Group-Members-REDACTED.png)
 ---
 
 ## Part 4 – Dynamic Rule for Guest Users
@@ -102,12 +147,18 @@ I modified the membership rule to identify Guest accounts.
 
 ```text
 (user.objectId -ne null) and (user.userType -eq "Guest")
-
 ```
+### Evidence – Guest User Dynamic Rule
 
-I validated the rule against several accounts.
+![Dynamic guest user rule](images/10-Dynamic-Guest-User-Rule-REDACTED.png)
 
-The validation demonstrated that the Guest test account matched the rule while standard Member accounts did not.
+The dynamic membership rule was updated to identify Guest users in Microsoft Entra ID.
+
+### Evidence – Guest Rule Validation
+
+![Guest rule validation](images/11-Dynamic-Guest-Rule-Validation-REDACTED.png)
+
+The rule validation confirmed that the Guest test account matched the rule while standard Member accounts did not.
 
 ### Result
 
@@ -117,6 +168,11 @@ After dynamic rule processing completed, the group contained the Guest account:
 
 This demonstrated attribute-based automatic group membership.
 
+### Evidence – Guest Dynamic Group Membership
+
+![Guest dynamic group membership](images/12-Dynamic-Guest-Membership-Confirmed-REDACTED.png)
+
+The Guest test account was automatically added to the dynamic group after the membership rule was processed.
 ---
 
 ## Part 5 – Dynamic Rule for Member Users
@@ -129,7 +185,29 @@ I also tested the inverse scenario by changing the rule to:
 
 Rule validation showed that standard directory Member accounts matched the rule while the Guest account did not.
 
-This demonstrated how the `userType` attribute can be used to automatically separate internal users from external/guest identities.
+### Evidence – Member Dynamic Rule Processing
+
+![Member dynamic rule processing](images/13-Dynamic-Rule-Processing-Succeeded-REDACTED.png)
+
+The dynamic membership rule was processed after changing the `userType` condition from Guest to Member.
+
+### Evidence – Member Rule Validation
+
+![Member rule validation](images/14-Dynamic-Member-Rule-Validation-REDACTED.png)
+
+Rule validation confirmed that standard directory Member accounts matched the rule while the Guest account did not.
+
+This demonstrates how Microsoft Entra ID dynamic membership rules can automatically separate internal Member accounts from external Guest identities based on the `userType` attribute.
+
+### Evidence - Final Dynamic Group Processing
+
+![Dynamic member group processing complete](images/15-Dynamic-Member-Group-Processing-Complete-REDACTED.png)
+
+Microsoft Entra ID successfully processed the updated dynamic membership rule. The processing status showed **Succeeded**, and the group membership was automatically updated to include the directory users that matched the Member-based rule.
+
+This provided final validation that Microsoft Entra ID can dynamically maintain group membership based on the `userType` attribute without manually adding users.
+
+---
 
 ---
 
@@ -174,12 +252,9 @@ I learned how group membership can control Microsoft 365 license assignment and 
 I also practiced validating dynamic rules before relying on them for automated membership changes.
 
 ---
+## Lab Evidence Summary
 
-## Evidence
-
-Screenshots documenting the configuration and validation of this lab are stored in the `images` folder.
-
-Evidence includes:
+The following activities were successfully configured and validated during this lab:
 
 1. Security group creation
 2. User membership in `sg-SC300-O365`
@@ -187,7 +262,7 @@ Evidence includes:
 4. User license inherited through group membership
 5. Dynamic membership rule configuration
 6. Dynamic group processing
-7. Guest-user rule validation
+7. Guest user dynamic rule validation
 8. Guest dynamic group membership
 9. Member-user rule validation
 
