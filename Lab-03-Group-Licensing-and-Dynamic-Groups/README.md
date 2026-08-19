@@ -66,6 +66,7 @@ The security group `sg-SC300-O365` was successfully created in Microsoft Entra I
 ![User Added to Security Group](images/03-Omar-Group-Membership-REDACTED.png)
 
 The test user was successfully added as a member of the security group.
+
 ---
 
 ## Part 2 – Configure Group-Based Licensing
