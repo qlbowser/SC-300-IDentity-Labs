@@ -39,7 +39,9 @@ I accessed the **Per-user multifactor authentication** management interface in M
 
 This provided hands-on experience with the legacy per-user MFA management method.
 
-![Per-user MFA configuration](images/01-per-user-mfa-configuration.png)
+![Enable Per-User MFA Confirmation](images/08-enable-per-user-mfa-confirmation.png)
+
+*Figure 1: Confirmation prompt displayed while enabling per-user MFA for the selected test account.*
 
 ---
 
@@ -54,7 +56,9 @@ I reviewed the available MFA service settings, including:
 
 This exercise demonstrated some of the tenant-level configuration options associated with MFA.
 
-![MFA service settings](images/02-mfa-service-settings.png)
+![MFA Service Settings](images/01-mfa-service-settings.png)
+
+*Figure 2: MFA service settings reviewed in Microsoft Entra ID, demonstrating tenant-level authentication configuration options.*
 
 ---
 
@@ -68,7 +72,13 @@ The policy was configured to target a specific test user and require Multi-Facto
 
 This demonstrated how Conditional Access can provide more granular control over MFA enforcement than traditional per-user MFA.
 
-![Conditional Access MFA policy configuration](images/03-conditional-access-policy-configuration.png)
+![Conditional Access Policy Configured](images/02-conditional-access-policy-configured.png)
+
+*Figure 3: Conditional Access policy assignments and configuration prepared for MFA enforcement.*
+
+![Conditional Access MFA Policy Configured](images/03-conditional-access-mfa-policy-configured.png)
+
+*Figure 4: Conditional Access grant controls configured to require multi-factor authentication for the targeted test account.*
 
 ---
 
@@ -86,17 +96,21 @@ The policy included:
 
 I initially reviewed the policy configuration before enabling it.
 
-![Conditional Access policy review](images/04-conditional-access-policy-review.png)
-
 ---
 
 ## 5. Create the MFA Conditional Access Policy
 
 I successfully created the `MFA_For_B.Banner` Conditional Access policy in Microsoft Entra ID.
 
+![Conditional Access Policy Created](images/04-conditional-access-policy-created.png)
+
+*Figure 5: MFA Conditional Access policy successfully created in Microsoft Entra ID.*
+
 The successful creation notification confirmed that the policy had been accepted by Microsoft Entra.
 
-![MFA policy creation confirmation](images/05-mfa-policy-created.png)
+![Conditional Access MFA Policy Enabled](images/05-conditional-access-mfa-policy-enabled.png)
+
+*Figure 6: Conditional Access MFA policy enabled and available for enforcement in Microsoft Entra ID.*
 
 ---
 
@@ -106,19 +120,19 @@ I returned to the Conditional Access policy list and verified that `MFA_For_B.Ba
 
 This confirmed that the policy had been successfully created and was available within the tenant.
 
-![Conditional Access policy verification](images/06-conditional-access-policy-verification.png)
-
 ---
 
 ## 7. Test MFA During User Sign-In
 
 I tested the configuration by signing in with the targeted test account.
 
+![Microsoft Authenticator MFA Challenge](images/06-mfa-authenticator-challenge.png)
+
+*Figure 7: MFA challenge presented during sign-in, requiring verification through Microsoft Authenticator.*
+
 Microsoft Entra required additional authentication and displayed a Microsoft Authenticator approval request with a number-matching challenge.
 
 This confirmed that MFA was being required during the authentication process.
-
-![MFA sign-in challenge](images/07-mfa-sign-in-challenge.png)
 
 ---
 
@@ -130,7 +144,9 @@ I entered the matching number in Microsoft Authenticator to verify the authentic
 
 This demonstrated Microsoft's number-matching MFA process, which helps protect users against accidental approval of unauthorized authentication requests.
 
-![Microsoft Authenticator number matching](images/08-authenticator-number-matching.png)
+![Microsoft Authenticator Number Matching Approval](images/07-mfa-number-matching-approval.jpg)
+
+*Figure 8: Microsoft Authenticator number matching used to approve and verify the MFA sign-in request.*
 
 ---
 
@@ -141,6 +157,8 @@ I also verified the MFA status from the per-user MFA interface.
 The selected test account displayed an **Enabled** MFA status, confirming the per-user MFA configuration.
 
 ![Per-user MFA enabled status](images/09-per-user-mfa-enabled.png)
+
+*Figure 9: Final verification showing the selected test account with per-user MFA enabled in Microsoft Entra ID.*
 
 ---
 
