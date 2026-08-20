@@ -1,2 +1,32 @@
-# SC-300-IDentity-Labs
-Hands-on Microsoft Entra ID identity and access management labs completed while preparing for the Microsoft SC-300 Identity and Access Administrator certification.
+# Microsoft SC-300 Identity & Access Management Portfolio
+
+## About This Portfolio
+
+This repository documents my hands-on experience with **Microsoft Entra ID and Identity & Access Management (IAM)** while preparing for the **Microsoft SC-300: Identity and Access Administrator** certification.
+
+My career goal is to specialize in **IAM within the Microsoft ecosystem**, focusing on identity security, authentication, access management, and Zero Trust principles.
+
+These labs demonstrate practical experience with technologies and concepts including:
+
+* Microsoft Entra ID
+* Multi-Factor Authentication (MFA)
+* Conditional Access
+* User and Group Management
+* Role-Based Access Control (RBAC)
+* Privileged Identity Management (PIM)
+* Identity Governance and Access Reviews
+
+Each lab includes documentation and redacted screenshots demonstrating the configuration and validation work I completed.
+
+**Career Direction:** IT Support → Systems Administration → **Microsoft Identity & Access Management**
+
+---
+
+## SC-300 Hands-On Labs
+
+| Lab                                                                                         | IAM Skills Demonstrated                                                      |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **[Lab 02 – Working with Tenant Properties](Lab-02-Working-With-Tenant-Properties/)**       | Microsoft Entra ID tenant configuration and administration                   |
+| **[Lab 03 – Group Licensing & Dynamic Groups](Lab-03-Group-Licensing-and-Dynamic-Groups/)** | Dynamic group membership, group-based licensing, and identity administration |
+| **[Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)**             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
+
