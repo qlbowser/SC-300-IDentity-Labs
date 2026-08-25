@@ -1,4 +1,4 @@
-# Lab 10 – Conditional Access Policies
+# Lab 13 – Conditional Access Policies
 
 ## Overview
 Configured and tested Microsoft Entra Conditional Access policies to control user access to cloud applications.
