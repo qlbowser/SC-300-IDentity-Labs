@@ -30,4 +30,5 @@ Each lab includes documentation and redacted screenshots demonstrating the confi
 | **[Lab 03 – Group Licensing & Dynamic Groups](Lab-03-Group-Licensing-and-Dynamic-Groups/)** | Dynamic group membership, group-based licensing, and identity administration |
 | **[Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)**             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
 | **[Lab 09 – Self-Service Password Reset (SSPR)](Lab-09-Self-Service-Password-Reset/)** | SSPR, Microsoft Authenticator, and group-scoped access |
+| [Lab 13 – Conditional Access Policies](Lab-13-Conditional-Access-Policies/) | Conditional Access, application access controls, What If analysis, and sign-in frequency policies |
 
