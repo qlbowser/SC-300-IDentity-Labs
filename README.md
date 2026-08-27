@@ -26,9 +26,10 @@ Each lab includes documentation and redacted screenshots demonstrating the confi
 
 | Lab                                                                                         | IAM Skills Demonstrated                                                      |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **[Lab 02 – Working with Tenant Properties](Lab-02-Working-With-Tenant-Properties/)**       | Microsoft Entra ID tenant configuration and administration                   |
-| **[Lab 03 – Group Licensing & Dynamic Groups](Lab-03-Group-Licensing-and-Dynamic-Groups/)** | Dynamic group membership, group-based licensing, and identity administration |
-| **[Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)**             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
-| **[Lab 09 – Self-Service Password Reset (SSPR)](Lab-09-Self-Service-Password-Reset/)** | SSPR, Microsoft Authenticator, and group-scoped access |
+| [Lab 01 – Manage User Roles](Lab-01-Manage-User-Roles/) | Identity lifecycle management, RBAC, least-privilege administration, user provisioning, and license management |
+| [Lab 02 – Working with Tenant Properties](Lab-02-Working-With-Tenant-Properties/)       | Microsoft Entra ID tenant configuration and administration                   |
+| [Lab 03 – Group Licensing & Dynamic Groups](Lab-03-Group-Licensing-and-Dynamic-Groups/) | Dynamic group membership, group-based licensing, and identity administration |
+| [Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
+| [Lab 09 – Self-Service Password Reset (SSPR)](Lab-09-Self-Service-Password-Reset/) | SSPR, Microsoft Authenticator, and group-scoped access |
 | [Lab 13 – Conditional Access Policies](Lab-13-Conditional-Access-Policies/) | Conditional Access, application access controls, What If analysis, and sign-in frequency policies |
 
