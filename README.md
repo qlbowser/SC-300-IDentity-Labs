@@ -32,6 +32,7 @@ Each lab includes documentation and redacted screenshots demonstrating the confi
 | [Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
 | [Lab 09 – Self-Service Password Reset (SSPR)](Lab-09-Self-Service-Password-Reset/) | SSPR, Microsoft Authenticator, and group-scoped access |
 | [Lab 13 – Conditional Access Policies](Lab-13-Conditional-Access-Policies/) | Conditional Access, application access controls, What If analysis, and sign-in frequency policies |
+| [Lab 19 – Register an Application](./Lab-19-Register-An-Application/) | Application registration, authentication configuration, client credentials, OAuth 2.0 API scopes, custom roles, and least-privilege access management |
 | [Lab 22 – Microsoft Entra Entitlement Management](./Lab-22-Entitlement-Management/README.md) | Entitlement Management, access packages, approval workflows, and access provisioning.
 | [Lab 25 – Creating Access Reviews](Lab-25-Creating-Access-Reviews/README.md) | Access Reviews, identity governance, access certification, reviewer assignment, recurring access reviews, and least-privilege access management |
 | [Lab 26 – Privileged Identity Management (PIM)](Lab-26-Privileged-Identity-Management/README.md) | Privileged Identity Management (PIM), just-in-time access, eligible role assignments, MFA, approval workflows, least privilege, and privileged access governance |
