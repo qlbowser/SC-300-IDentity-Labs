@@ -31,6 +31,7 @@ Each lab includes documentation and redacted screenshots demonstrating the confi
 | [Lab 03 – Group Licensing & Dynamic Groups](Lab-03-Group-Licensing-and-Dynamic-Groups/) | Dynamic group membership, group-based licensing, and identity administration |
 | [Lab 08 – Multi-Factor Authentication](Lab-08-Multi-Factor-Authentication/)             | MFA, Conditional Access, Microsoft Authenticator, and identity security      |
 | [Lab 09 – Self-Service Password Reset (SSPR)](Lab-09-Self-Service-Password-Reset/) | SSPR, Microsoft Authenticator, and group-scoped access |
+| [Lab 11 – Azure Resource Roles with Privileged Identity Management](./Lab-11-Azure-Resource-Roles-PIM/) | Azure RBAC, Privileged Identity Management (PIM), eligible role assignments, just-in-time activation, time-bound privileged access, and least privilege |
 | [Lab 13 – Conditional Access Policies](Lab-13-Conditional-Access-Policies/) | Conditional Access, application access controls, What If analysis, and sign-in frequency policies |
 | [Lab 19 – Register an Application](./Lab-19-Register-An-Application/) | Application registration, authentication configuration, client credentials, OAuth 2.0 API scopes, custom roles, and least-privilege access management |
 | [Lab 20 – Enterprise Applications](./Lab-20-Enterprise-Applications/) | Enterprise Applications, service principals, application gallery integration, user assignment, and least-privilege application access management |
